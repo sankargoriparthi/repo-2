@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>ContactService.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">junit-easymock</a> &gt; <a href="index.source.html" class="el_package">com.app.junit_easymock.services</a> &gt; <span class="el_source">ContactService.java</span></div><h1>ContactService.java</h1><pre class="source lang-java linenums">package com.app.junit_easymock.services;
+
+import com.app.junit_easymock.controller.ContactDao;
+
+<span class="fc" id="L5">public class ContactService {</span>
+	private ContactDao cDao;
+	
+	public void setcDao(ContactDao cDao) {
+<span class="fc" id="L9">		this.cDao = cDao;</span>
+<span class="fc" id="L10">	}</span>
+
+	public String getName(int cId) {
+<span class="fc" id="L13">		String name =cDao.getName(cId);</span>
+<span class="fc" id="L14">		return name;</span>
+		
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.1.201405082137</span></div></body></html>
